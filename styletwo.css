@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --maintransittion: all 0.3s ease-in-out;
+}
+body {
+  font-family: "Catamaran", sans-serif;
+  line-height: 1.5;
+}
+/* Clear fixed  */
+.clearfix::after,
+.clearfix::before {
+  content: "" "";
+  clear: both;
+  display: table;
+}
+/* payment sction */
+.more-pay {
+  max-width: 90vh;
+  width: 90%;
+  margin: 100px auto;
+}
+.more-pay div {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(4, 150px);
+  grid-template-columns: repeat(1, 350px);
+  grid-gap: 50px;
+}
+
+.b-pay {
+  background: url(./Img/bkash.gif) center/cover;
+  border: solid rgb(209, 32, 83);
+  border-radius: 20px;
+}
+.n-pay {
+  background: url(./Img/nagod.png) center/cover;
+  border: solid rgb(214, 23, 23);
+  border-radius: 20px;
+}
+.r-pay {
+  background: url(./Img/rocket.png) center/cover;
+  border: solid rgb(139, 44, 177);
+  border-radius: 20px;
+}
+.s-pay {
+  background: url(./Img/surecash.png) center/cover;
+  border: solid rgb(202, 185, 31);
+  border-radius: 20px;
+}
+.more-pay .r-pay,
+.b-pay,
+.n-pay,
+.s-pay {
+  width: 100%;
+  box-shadow: 8px 8px 10px;
+  transition: var(--maintransittion);
+  cursor: pointer;
+}
+.b-pay:hover {
+  transform: translateY(-6px);
+}
+.r-pay:hover {
+  transform: translateY(-6px);
+}
+.n-pay:hover {
+  transform: translateY(-6px);
+}
+.s-pay:hover {
+  transform: translateY(-6px);
+}
+.pay-title {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 50px 0 0 0px;
+  color: rgb(29, 17, 17);
+  letter-spacing: 0.5rem;
+}
+@media screen and (min-width: 805px) {
+  .more-pay div {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+/* product start review  */
+.checked {
+  color: rgb(240, 109, 16);
+}
+
+/* about section  */
+.more {
+  min-height: 80vh;
+  position: relative;
+}
+
+.more div {
+  text-align: center;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
+
+.table th {
+  width: 25%;
+}
+
+tfoot tr td {
+  text-align: center;
+}
+
+.btn-danger {
+  border: solid rgb(4, 59, 16) 2px;
+  color: whitesmoke;
+  border-radius: 20px;
+  font-size: 15px;
+  background-color: rgb(100, 13, 13);
+  padding: 1px 6px;
+}
+
+.btn-remove {
+  color: red;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#purchase {
+  border: solid whitesmoke;
+  padding: 4px 25px;
+  color: #e3edf7;
+  background-color: rgb(7, 54, 31);
+  font-size: 22px;
+  border-radius: 20px;
+}
+
+.purchase {
+  text-align: center;
+}
+/* for sigle product  */
+.single-product {
+  padding: 5rem 2rem;
+  margin: auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.productpage-1 img {
+  width: 420px;
+  height: 310px;
+  border: seagreen solid 5px;
+  border-radius: 10px;
+}
+
+.productpage-2 h3 {
+  margin: 10px;
+}
+
+.button {
+  margin: 20px 0px;
+  padding: 10px;
+}
+
+.btn {
+  color: white;
+  background: #581845;
+  border-radius: 20px;
+  text-decoration: none;
+  border: solid black;
+  padding: 5px 8px;
+  margin-right: 15px;
+}
+
+.related h3 {
+  text-align: center;
+}
+@media screen and (min-width: 1230px) {
+  .single-product {
+    min-height: 75vh;
+  }
+  .productpage-1 img {
+    width: 570px;
+    height: 460px;
+  }
+  .productpage-1 {
+    margin-top: 60px;
+    width: 50%;
+    float: left;
+  }
+  .productpage-2 {
+    margin-top: 100px;
+    width: 50%;
+    float: right;
+    text-align: left;
+  }
+}
+/* contract page  */
+.contract {
+  min-height: 80vh;
+  background: url(./Img/bannar7.jpg) center/cover no-repeat fixed;
+  position: relative;
+}
+/* this is for main admin page  */
+
+.row-sub-admin {
+  display: block;
+  padding: 2rem 0 0 2rem;
+  max-width: 100%;
+  margin: auto;
+  float: left;
+
+  /* overflow: hidden; */
+}
+.row-sub-admin .write-2 {
+  border: rgba(0, 0, 0, 0.849) solid 12px;
+  border-radius: 22px;
+  box-shadow: 5px 7px 8px;
+  background: whitesmoke;
+  overflow: hidden;
+}
+.row-sub-admin .write-2:hover {
+  transform: translateY(-2px);
+}
+@media screen and (min-width: 850px) {
+  .row-sub-admin {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .row-sub-admin {
+    width: 25%;
+  }
+}
+.admin-aprove,
+.admin-delete {
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 20px;
+  cursor: pointer;
+}
+.admin-aprove {
+  background: rgb(5, 77, 5);
+  border-radius: 6px;
+  box-shadow: 2px 3px 4px;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.admin-aprove:hover {
+  background: rgba(5, 77, 5, 0.562);
+  color: rgb(0, 0, 0);
+}
+.admin-delete {
+  background: rgb(133, 14, 14);
+  border-radius: 6px;
+  box-shadow: 2px 3px 4px;
+  color: whitesmoke;
+  font-weight: bolder;
+}
+.admin-delete:hover {
+  background: rgba(133, 14, 14, 0.493);
+  color: rgb(12, 11, 11);
+}
+.main-admin {
+  background: radial-gradient(#c6d9ec, #527a7a);
+  min-height: 100vh;
+  overflow: hidden;
+}
+.name2 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: #000000;
+}
+.nav-link2 {
+  background: black;
+  text-align: center;
+  display: block;
+  font-size: 1.2rem;
+  border: rgb(0, 0, 0) solid;
+  border-radius: 10px;
+  margin: 20px 30px 0 0;
+  color: rgb(255, 255, 255);
+  font-weight: 5px;
+  transition: var(--maintransittion);
+}
+.p-dis {
+  max-width: 70%;
+  min-height: 10vh;
+}
